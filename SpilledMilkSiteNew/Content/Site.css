@@ -1,0 +1,148 @@
+﻿/* TAG DEFINITIONS */
+
+body {
+	padding-top: 50px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+/* CLASS DEFINITIONS */
+
+/* Set padding to keep content from hitting the edges */
+
+.article-row {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#carousel {
+	margin: 50px 5px;
+}
+
+	#carousel img {
+		width: 100%;
+		height: auto;
+	}
+
+.carousel-caption {
+	text-shadow: 1px 1px 7px #000;
+}
+
+	.carousel-caption h3 {
+		text-shadow: 1px 1px 7px #000;
+	}
+
+.column-paragraph {
+	border-bottom: 5px
+}
+
+.content-filler {
+	min-height: 300px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+/*
+	http://caniuse.com is great for looking at CSS attribute usage in different browsers
+*/
+
+.down-button {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+	.down-button i {
+		color: white;
+	}
+
+.fill-screen {
+	background-size: cover;
+	background-position: center;
+}
+
+/* Makes the full screen pictures NOT scroll. */
+
+.fixed-attachment {
+	background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+	.fixed-attachment {
+		background-attachment: scroll;
+	}
+}
+
+.img-responsive {
+	margin: 0px auto;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	padding: 15px 15px;
+	-webket-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/*@media (max-width: 400px)
+{
+	.navbar-header {
+		position: relative;
+	}
+
+	.navbar img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 80%;
+	}
+}*/
+
+.origin-row {
+	padding: 0px 5px 0px 5px;
+}
+
+.row-divider {
+	min-height: 20px;
+}
+
+.title-image {
+	position: absolute;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.title-row {
+	position: relative;
+	min-height: 300px;
+}
+
+/* at the top of each page */
+.title-text {
+	padding-top: 30px;
+}
+
+.version-table thead tr td {
+	font-weight: bold;
+}
+
+.cbp-af-header-shrink {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	opacity: 0.9;
+}
