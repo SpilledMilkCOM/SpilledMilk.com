@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 using SM.Models;
+using SM.Utils;
 
 namespace SpilledMilkSiteNew.Controllers
 {
@@ -70,6 +67,8 @@ namespace SpilledMilkSiteNew.Controllers
 		{
 			ViewBag.Title = title;
 			ViewBag.CompanyName = Constants.COMPANY_NAME;
+
+			ControllerUtil.SetTwitterCard(ViewBag);
 		}
 	}
 }

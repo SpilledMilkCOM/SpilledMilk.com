@@ -4,6 +4,20 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<!-- Since there is no reference to a Model, the ViewBag is needed to send values to this view wrapper. -->
+
+	@if (ViewBag.TwitterCard != null)
+	{
+		<meta name="twitter:card" content="@ViewBag.TwitterCard" />
+		<meta name="twitter:site" content="@ViewBag.TwitterId" />
+		<meta name="twitter:creator" content="@ViewBag.TwitterCreatorId" />
+		<meta name="twitter:title" content="@ViewBag.TwitterTitle" />
+		<meta name="twitter:description" content="@ViewBag.TwitterDescription" />
+		<meta name="twitter:image" content="@ViewBag.TwitterImage" />
+		<meta name="twitter:image:alt" content="@ViewBag.TwitterImageAlt" />
+	}
+
 	<title>@ViewBag.Title</title>
 
 	@Styles.Render("~/Content/FontAwesome")
