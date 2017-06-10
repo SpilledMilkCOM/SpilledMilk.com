@@ -26,8 +26,10 @@
 					imageUrl = imageUrl.Replace("~", Models.Constants.WEBSITE_URL);
 				}
 
-				viewBag.TwitterImage = string.IsNullOrEmpty(imageUrl) ? "http://SpilledMilk.com/images/Spilled Milk Logo 400x420.png" : imageUrl;
+				viewBag.TwitterImage = string.IsNullOrEmpty(imageUrl) ? "http://SpilledMilk.com/images/Spilled Milk on Black 300x300.png" : imageUrl;
 				viewBag.TwitterImageAlt = imageUrlAlt ?? "Logo of Spilled Milk spelled out using spilled milk.";
+
+				viewBag.OpenGraphUrl = Models.Constants.WEBSITE_URL;
 			}
 		}
 	}
