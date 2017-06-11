@@ -50,6 +50,8 @@ namespace SM.Utils
 				{
 					fileName = $"{pieces[1]} {pieces[0]}";
 				}
+
+				// If it doesn't split correctly, oh well at least the extension is gone. (for those one word names like M3TH)
 			}
 
 			return fileName;

@@ -2,13 +2,13 @@
 
 <h1 class="title-text">@ViewBag.Title</h1>
 
-<div class="row">
+<div class="row article-row">
 	<div class="col-md-3">
 		<h2>Wraparound Covers (by Monte Moore)</h2>
 	</div>
 </div>
 
-<div class="row">
+<div class="row article-row">
 	<div id="nanoGallery3">
 		<a href="~/Images/CiCi01.00.Cover-Moore.jpg"
 		   data-ngthumb="../../Images/thumbs/CiCi01.00.Cover-Moore.jpg"
@@ -28,13 +28,13 @@
 	</div>
 </div>
 
-<div class="row">
+<div class="row article-row">
 	<div class="col-md-3">
 		<h2>Alternate covers</h2>
 	</div>
 </div>
 
-<div class="row">
+<div class="row article-row">
 	<div id="nanoGallery4">
 		<a href="~/Images/CiCi01.00.Cover-Finch.jpg"
 		   data-ngthumb="../../Images/thumbs/CiCi01.00.Cover-Finch.jpg"
@@ -69,17 +69,18 @@
 		   data-ngdesc="[Jimmy Reyes]">Issue 4 (back)</a>
 	</div>
 
-
-	<div class="row">
+	<div class="row article-row">
 		<div class="col-md-3">
 			<h2>Random Pinups</h2>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row article-row">
 		<div id="nanoGallery1">
 			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
 			{
+				// TODO - Might want to add that "endless scrolling" code here.
+
 				<a href="~/Images/@fileName"
 				   data-ngthumb="../../Images/thumbs/@fileName"
 				   data-ngdesc="[Pinup 2002]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
