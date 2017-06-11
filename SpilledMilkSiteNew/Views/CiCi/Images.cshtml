@@ -1,4 +1,6 @@
-﻿<h1 class="title-text">@ViewBag.Title</h1>
+﻿@using SM.Utils;
+
+<h1 class="title-text">@ViewBag.Title</h1>
 
 <div class="row">
 	<div class="col-md-3">
@@ -76,72 +78,12 @@
 
 	<div class="row">
 		<div id="nanoGallery1">
-			<a href="~/Images/CiCiPinup-Allan_Jonnie.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Allan_Jonnie.jpg"
-			   data-ngdesc="[Pinup 2002]">Jonnie Allan</a>
+			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
+			{
+				<a href="~/Images/@fileName"
+				   data-ngthumb="../../Images/thumbs/@fileName"
+				   data-ngdesc="[Pinup 2002]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
+			}
 
-			<a href="~/Images/CiCiPinup-Altiner_Alp01.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Altiner_Alp01.jpg"
-			   data-ngdesc="[Pinup 2002]">Alp Altiner</a>
-
-			<a href="~/Images/CiCiPinup-Altiner_Alp02.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Altiner_Alp02.jpg"
-			   data-ngdesc="[Pinup 2002]">Alp Altiner</a>
-
-			<a href="~/Images/CiCiPinup-Mikellides_Vasilis01.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Mikellides_Vasilis01.jpg"
-			   data-ngdesc="[Pinup 2002]">Vasilis Mikellides</a>
-
-			<a href="~/Images/CiCiPinup-Mikellides_Vasilis02.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Mikellides_Vasilis02.jpg"
-			   data-ngdesc="[Pinup 2002]">Vasilis Mikellides</a>
-
-			<a href="~/Images/CiCiPinup-Mikellides_Vasilis03.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Mikellides_Vasilis03.jpg"
-			   data-ngdesc="[Pinup 2002]">Vasilis Mikellides</a>
-
-			<a href="~/Images/CiCiPinup-Nguyen_John.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Nguyen_John.jpg"
-			   data-ngdesc="[Pinup 2002]">John Nguyen</a>
-
-			<a href="~/Images/CiCiPinup-Nguyen_John02.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Nguyen_John02.jpg"
-			   data-ngdesc="[Pinup 2002]">John Nguyen</a>
-
-			<a href="~/Images/CiCiPinup-Nguyen_John03.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Nguyen_John03.jpg"
-			   data-ngdesc="[Pinup 2002]">John Nguyen</a>
-
-			<a href="~/Images/CiCiPinup-Patterson_Mike01.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Patterson_Mike01.jpg"
-			   data-ngdesc="[Pinup 2002]">Mike Patterson</a>
-
-			<a href="~/Images/CiCiPinup-Ramos_ReyRain.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Ramos_ReyRain.jpg"
-			   data-ngdesc="[Pinup 2002]">Rey "Rein" Ramos</a>
-
-			<a href="~/Images/CiCiPinup-Rhodes_JohnA.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Rhodes_JohnA.jpg"
-			   data-ngdesc="[Pinup 2002]">John A Rhodes</a>
-
-			<a href="~/Images/CiCiPinup-Smart_Parker01.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Smart_Parker01.jpg"
-			   data-ngdesc="[Pinup 1999]">Parker Smart</a>
-
-			<a href="~/Images/CiCiPinup-Smart_Parker02.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Smart_Parker02.jpg"
-			   data-ngdesc="[Pinup 1999]">Parker Smart</a>
-
-			<a href="~/Images/CiCiPinup-Smart_Parker03.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Smart_Parker03.jpg"
-			   data-ngdesc="[Pinup 1999]">Parker Smart</a>
-
-			<a href="~/Images/CiCiPinup-Williams_Vicki01.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Williams_Vicki01.jpg"
-			   data-ngdesc="[Pinup 2000]">Vicki Williams</a>
-
-			<a href="~/Images/CiCiPinup-Williams_Vicki02.jpg"
-			   data-ngthumb="../../Images/thumbs/CiCiPinup-Williams_Vicki02.jpg"
-			   data-ngdesc="[Pinup 2001]">Vicki Williams</a>
 		</div>
 	</div>

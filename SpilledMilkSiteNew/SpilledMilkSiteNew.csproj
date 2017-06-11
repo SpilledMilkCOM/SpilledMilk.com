@@ -189,6 +189,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
     <Compile Include="Utils\ControllerUtil.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +228,11 @@
     <Content Include="Images\CiCiPinup-Allan_Jonnie.jpg" />
     <Content Include="Images\CiCiPinup-Altiner_Alp01.jpg" />
     <Content Include="Images\CiCiPinup-Altiner_Alp02.jpg" />
+    <Content Include="Images\CiCiPinup-Armstrong_Matt.jpg" />
+    <Content Include="Images\CiCiPinup-Campeau_Mike01.jpg" />
+    <Content Include="Images\CiCiPinup-Campeau_Mike02.jpg" />
+    <Content Include="Images\CiCiPinup-Campeau_Mike03.jpg" />
+    <Content Include="Images\CiCiPinup-Johnson_Kristi.jpg" />
     <Content Include="Images\CiCiPinup-Mikellides_Vasilis01.jpg" />
     <Content Include="Images\CiCiPinup-Mikellides_Vasilis02.jpg" />
     <Content Include="Images\CiCiPinup-Mikellides_Vasilis03.jpg" />
@@ -290,6 +296,11 @@
     <Content Include="Images\thumbs\CiCiPinup-Allan_Jonnie.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Altiner_Alp01.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Altiner_Alp02.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Armstrong_Matt.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Campeau_Mike01.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Campeau_Mike02.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Campeau_Mike03.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Johnson_Kristi.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Mikellides_Vasilis01.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Mikellides_Vasilis02.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Mikellides_Vasilis03.jpg" />
