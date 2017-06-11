@@ -73,11 +73,14 @@
 		<div class="col-md-3">
 			<h2>Random Pinups</h2>
 		</div>
+		<div class="col-md-2">
+			<a class="btn btn-default" href="~/CiCi/Pinups">All Pinups &raquo;</a>
+		</div>
 	</div>
 
 	<div class="row article-row">
 		<div id="nanoGallery1">
-			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
+			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*", 8))
 			{
 				// TODO - Might want to add that "endless scrolling" code here.
 

@@ -38,6 +38,13 @@ namespace SpilledMilkSiteNew.Controllers
 			return View();
 		}
 
+		public ActionResult Pinups()
+		{
+			SetTitle(nameof(Pinups));
+
+			return View();
+		}
+
 		public ActionResult Story()
 		{
 			SetTitle(nameof(Story));

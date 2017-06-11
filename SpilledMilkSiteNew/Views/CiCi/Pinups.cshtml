@@ -1,0 +1,16 @@
+﻿@using SM.Utils;
+
+<h1 class="title-text">@ViewBag.Title</h1>
+
+	<div class="row article-row">
+		<div id="nanoGallery1">
+			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
+			{
+				// TODO - Might want to add that "endless scrolling" code here.
+
+				<a href="~/Images/@fileName"
+				   data-ngthumb="../../Images/thumbs/@fileName"
+				   data-ngdesc="[Pinup 2002]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
+			}
+		</div>
+	</div>
