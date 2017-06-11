@@ -224,6 +224,9 @@
     <Content Include="Images\CiCi04.00.Cover-Moore.jpg" />
     <Content Include="Images\CiCi04.00.Cover-Park.jpg" />
     <Content Include="Images\CiCi04.00.Cover-Reyes.jpg" />
+    <Content Include="Images\CiCiPinup-Nguyen_John.jpg" />
+    <Content Include="Images\CiCiPinup-Williams_Vicki01.jpg" />
+    <Content Include="Images\CiCiPinup-Williams_Vicki02.jpg" />
     <Content Include="Images\Credits-01.jpg" />
     <Content Include="Images\facebook-logo.png" />
     <Content Include="Images\GitHub-Mark-32px.png" />
@@ -270,6 +273,9 @@
     <Content Include="Images\thumbs\CiCi04.00.Cover-Moore.jpg" />
     <Content Include="Images\thumbs\CiCi04.00.Cover-Park.jpg" />
     <Content Include="Images\thumbs\CiCi04.00.Cover-Reyes.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Nguyen_John.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Williams_Vicki01.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Williams_Vicki02.jpg" />
     <Content Include="Images\Twitter-Logo.png" />
     <Content Include="Images\WindowsPhoneMarketplace.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -345,6 +351,7 @@
     <Content Include="Views\CiCi\Credits.cshtml" />
     <Content Include="Views\Home\Legal.cshtml" />
     <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\CiCi\Images.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

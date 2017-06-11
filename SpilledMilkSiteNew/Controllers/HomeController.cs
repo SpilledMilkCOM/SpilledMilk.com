@@ -30,7 +30,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		public ActionResult Contact()
 		{
-			SetTitle("Contact");
+			SetTitle(nameof(Contact));
 
 			return View();
 		}

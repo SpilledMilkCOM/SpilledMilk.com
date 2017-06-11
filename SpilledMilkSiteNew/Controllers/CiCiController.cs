@@ -12,13 +12,21 @@ namespace SpilledMilkSiteNew.Controllers
     {
         public ActionResult Characters()
         {
-			SetTitle("Characters");
+			SetTitle(nameof(Characters));
 
             return View();
         }
+
 		public ActionResult Credits()
 		{
-			SetTitle("Credits");
+			SetTitle(nameof(Credits));
+
+			return View();
+		}
+
+		public ActionResult Images()
+		{
+			SetTitle(nameof(Images));
 
 			return View();
 		}
@@ -32,7 +40,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		public ActionResult Story()
 		{
-			SetTitle("Story");
+			SetTitle(nameof(Story));
 
 			return View();
 		}

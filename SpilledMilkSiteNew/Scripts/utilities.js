@@ -32,6 +32,26 @@ $(function () {
 
 	// Initialize nanoGallery.
 	$(document).ready(function () {
+		$("#nanoGallery1").nanoGallery(
+			{
+				thumbnailWidth: 'auto',
+				thumbnailHeight: 220,
+				locationHash: false,
+				thumbnailHoverEffect: 'borderLighter,imageScaleIn80'
+			});
+	});
+
+	$(document).ready(function () {
+		$("#nanoGallery2").nanoGallery(
+			{
+				thumbnailWidth: 'auto',
+				thumbnailHeight: 220,
+				locationHash: false,
+				thumbnailHoverEffect: 'borderLighter,imageScaleIn80'
+			});
+	});
+
+	$(document).ready(function () {
 		$("#nanoGallery3").nanoGallery(
 			{
 				thumbnailWidth: 'auto',
