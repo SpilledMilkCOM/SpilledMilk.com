@@ -16,6 +16,12 @@ namespace SpilledMilkSiteNew.Controllers
 
             return View();
         }
+		public ActionResult CoverSketches()
+		{
+			SetTitle("Cover Sketches");
+
+			return View();
+		}
 
 		public ActionResult Credits()
 		{

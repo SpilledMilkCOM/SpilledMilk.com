@@ -4,13 +4,13 @@
 
 	<div class="row article-row">
 		<div id="nanoGallery1">
-			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
+			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiCoverSketch-*"))
 			{
 				// TODO - Might want to add that "endless scrolling" code here.
 
 				<a href="~/Images/@fileName"
 				   data-ngthumb="../../Images/thumbs/@fileName"
-				   data-ngdesc="[Pinup @FileUtil.ParseImageFileDate(fileName.Replace("CiCiPinup-", string.Empty))]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
+				   data-ngdesc="[Cover Sketch @FileUtil.ParseImageFileDate(fileName.Replace("CiCiCoverSketch-", string.Empty))]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiCoverSketch-", string.Empty))</a>
 			}
 		</div>
 	</div>

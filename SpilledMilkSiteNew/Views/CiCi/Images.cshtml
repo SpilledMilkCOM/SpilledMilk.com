@@ -6,6 +6,9 @@
 	<div class="col-md-3">
 		<h2>Wraparound Covers (by Monte Moore)</h2>
 	</div>
+	<div class="col-md-2">
+		<a class="btn btn-default" href="~/CiCi/CoverSketches">Cover Sketches &raquo;</a>
+	</div>
 </div>
 
 <div class="row article-row">
@@ -31,6 +34,9 @@
 <div class="row article-row">
 	<div class="col-md-3">
 		<h2>Alternate covers</h2>
+	</div>
+	<div class="col-md-2">
+		<a class="btn btn-default" href="~/CiCi/CoverSketches">Cover Sketches &raquo;</a>
 	</div>
 </div>
 
@@ -82,11 +88,9 @@
 		<div id="nanoGallery1">
 			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*", 8))
 			{
-				// TODO - Might want to add that "endless scrolling" code here.
-
 				<a href="~/Images/@fileName"
 				   data-ngthumb="../../Images/thumbs/@fileName"
-				   data-ngdesc="[Pinup 2002]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
+				   data-ngdesc="[Pinup @FileUtil.ParseImageFileDate(fileName.Replace("CiCiPinup-", string.Empty))]">@FileUtil.ParseImageFileName(fileName.Replace("CiCiPinup-", string.Empty))</a>
 			}
 
 		</div>

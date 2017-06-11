@@ -47,6 +47,27 @@ namespace SM.Utils
 			return result;
 		}
 
+		public static string ParseImageFileDate(string fileName)
+		{
+			if (fileName != null)
+			{
+				char[] delimeters = { '_' };
+				fileName = Path.GetFileNameWithoutExtension(fileName);
+				var pieces = fileName.Split(delimeters);
+
+				if (pieces.Length >= 3)
+				{
+					fileName = pieces[2];
+				}
+				else
+				{
+					fileName = "2002";
+				}
+			}
+
+			return fileName;
+		}
+
 		public static string ParseImageFileName(string fileName)
 		{
 			if (fileName != null)
@@ -55,7 +76,7 @@ namespace SM.Utils
 				fileName = Path.GetFileNameWithoutExtension(fileName);
 				var pieces = fileName.Split(delimeters);
 
-				if (pieces.Length == 2)
+				if (pieces.Length >= 2)
 				{
 					fileName = $"{pieces[1]} {pieces[0]}";
 				}
