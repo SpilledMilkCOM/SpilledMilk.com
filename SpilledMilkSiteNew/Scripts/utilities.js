@@ -31,6 +31,11 @@ $(function () {
 	new WOW().init();
 
 	// Initialize nanoGallery.
+	// http://nanogallery.brisbois.fr/
+	// Paid $25 to use on this site.
+	// New site:  http://nanogallery2.nanostudio.org/
+	// https://github.com/nanostudio-org/nanogallery2
+
 	$(document).ready(function () {
 		$("#nanoGallery1").nanoGallery(
 			{
