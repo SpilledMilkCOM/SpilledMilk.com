@@ -313,8 +313,15 @@
     <Content Include="Images\MilkSpillMenuAlpha.png" />
     <Content Include="Images\oilslick.jpg" />
     <Content Include="Images\oilspill.jpg" />
+    <Content Include="Images\pds00.jpg" />
+    <Content Include="Images\pds01.jpg" />
     <Content Include="Images\pods2.jpg" />
     <Content Include="Images\PodsGreen.jpg" />
+    <Content Include="Images\sample01.jpg" />
+    <Content Include="Images\sample02.jpg" />
+    <Content Include="Images\sample03.jpg" />
+    <Content Include="Images\sample04.jpg" />
+    <Content Include="Images\sample05.jpg" />
     <Content Include="Images\Spilled Milk Logo 100x105.png" />
     <Content Include="Images\Spilled Milk Logo 200x210.png" />
     <Content Include="Images\Spilled Milk Logo 400x420.png" />
@@ -427,8 +434,10 @@
     <Content Include="Images\thumbs\CiCiPinup-Yan_Stan_2014_02.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Yan_Stan_2014_03.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Zekiesan_2002.jpg" />
+    <Content Include="Images\thumbs\pds00t.jpg" />
     <Content Include="Images\Twitter-Logo.png" />
     <Content Include="Images\WindowsPhoneMarketplace.jpg" />
+    <Content Include="Images\zoom.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\cbpAnimatedHeader.js" />
@@ -505,6 +514,7 @@
     <Content Include="Views\CiCi\Images.cshtml" />
     <Content Include="Views\CiCi\Pinups.cshtml" />
     <Content Include="Views\CiCi\CoverSketches.cshtml" />
+    <Content Include="Views\CiCi\CreditParker.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

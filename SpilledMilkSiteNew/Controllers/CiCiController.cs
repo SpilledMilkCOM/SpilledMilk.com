@@ -23,7 +23,14 @@ namespace SpilledMilkSiteNew.Controllers
 			return View();
 		}
 
-		public ActionResult Credits()
+        public ActionResult CreditParker()
+        {
+            SetTitle("Parker Smart");
+
+            return View();
+        }
+
+        public ActionResult Credits()
 		{
 			SetTitle(nameof(Credits));
 
