@@ -1,10 +1,14 @@
 ﻿@using SM.Utils;
 
-<h1 class="title-text">@ViewBag.Title</h1>
+@{
+    var fileList = FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*");
+}
+
+<h1 class="title-text">@ViewBag.Title (@fileList.Count)</h1>
 
 	<div class="row article-row">
 		<div id="nanoGallery1">
-			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiPinup-*"))
+			@foreach (var fileName in fileList)
 			{
 				// TODO - Might want to add that "endless scrolling" code here.
 
