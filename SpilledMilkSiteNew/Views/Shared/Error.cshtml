@@ -1,9 +1,24 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
+﻿@using SM.Models;
+
+@model System.Web.Mvc.HandleErrorInfo
+
 
 @{
     ViewBag.Title = "Error";
+    ViewBag.CompanyName = Constants.COMPANY_NAME;
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<h1 class="title-text text-danger">@ViewBag.Title</h1>
 
+<div class="row article-row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-9">
+        <h3 class="text-danger">An error occurred while processing your request.</h3>
+
+        @if (ViewData != null)
+        {
+            <h4 class="text-danger">@ViewData["ErrorMessage"]</h4>
+        }
+    </div>
+</div>
