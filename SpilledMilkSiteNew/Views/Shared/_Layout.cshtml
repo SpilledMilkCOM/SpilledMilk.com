@@ -3,9 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-    <!-- Since there is no reference to a Model, the ViewBag is needed to send values to this view wrapper. -->
+    <meta name="author" content="Parker Smart">
+    @*
+        http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
+        2) Keywords - Usage of a few keywords will help SEO, but don't "stuff" keywords as this will penalize the site.
+    *@
+    <meta name="description" content="The goal of Spilled Milk is to create a great looking - great reading comic book.">
+    <meta name="keywords" content="spilled milk, spilled, milk, comics, comic book, sci-fi, science fiction, cici">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    @*
+        Since there is no reference to a Model, the ViewBag is needed to send values to this view wrapper.
+    *@
 
     @if (ViewBag.TwitterCard != null)
     {
@@ -53,7 +61,7 @@
                 <div class="navbar-header">
 
                     @*<a href="~/Home/Index" class="navbar-left"><img src="~/Images/MilkSpillMenuAlpha.png" alt="Home" height="30" /></a>*@
-                   <a href="~/Home/Index" class="navbar-left"><img src="~/Images/Spilled Milk Logo.png" alt="Home" height="40" /></a>
+                    <a href="~/Home/Index" class="navbar-left"><img src="~/Images/Spilled Milk Logo.png" alt="Home" height="40" /></a>
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>

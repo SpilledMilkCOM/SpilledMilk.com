@@ -1,7 +1,25 @@
-﻿namespace SM.Utils
+﻿using SM.Models;
+
+namespace SM.Utils
 {
 	public class ControllerUtil
 	{
+        /// <summary>
+        /// Sets the Subtitle and Title of the ViewBag so the shared _Layout page can use it.
+        /// </summary>
+        /// <param name="subtitle"></param>
+        public static void SetSubtitle(dynamic viewBag, string subtitle)
+        {
+            // http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
+            // 1) Page Titles need to be descriptive and help SEO.
+
+            viewBag.Subtitle = subtitle;
+            viewBag.Title = $"{subtitle} - {Constants.COMPANY_NAME} Comics";
+            viewBag.CompanyName = Constants.COMPANY_NAME;
+
+            SetTwitterCard(viewBag);
+        }
+
 		/// <summary>
 		/// Initialize the ViewBag with the Twitter Card "meta" tag info.
 		/// </summary>
@@ -16,20 +34,20 @@
 			if (viewBag != null)
 			{
 				viewBag.TwitterCard = card ?? "summary";
-				viewBag.TwitterCreatorId = Models.Constants.TWITTER_CREATOR_ID;
-				viewBag.TwitterId = Models.Constants.TWITTER_ID;
+				viewBag.TwitterCreatorId = Constants.TWITTER_CREATOR_ID;
+				viewBag.TwitterId = Constants.TWITTER_ID;
 				viewBag.TwitterTitle = title ?? "Spilled Milk";
 				viewBag.TwitterDescription = description ?? "The home site for CiCi and other projects by Parker Smart.";
 
 				if (!string.IsNullOrEmpty(imageUrl) && imageUrl.Substring(0, 1) == "~")
 				{
-					imageUrl = imageUrl.Replace("~", Models.Constants.WEBSITE_URL);
+					imageUrl = imageUrl.Replace("~", Constants.WEBSITE_URL);
 				}
 
 				viewBag.TwitterImage = string.IsNullOrEmpty(imageUrl) ? "http://SpilledMilk.com/images/Spilled Milk on Black 300x300.png" : imageUrl;
 				viewBag.TwitterImageAlt = imageUrlAlt ?? "Logo of Spilled Milk spelled out using spilled milk.";
 
-				viewBag.OpenGraphUrl = Models.Constants.WEBSITE_URL;
+				viewBag.OpenGraphUrl = Constants.WEBSITE_URL;
 			}
 		}
 	}

@@ -65,10 +65,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		private void SetTitle(string title)
 		{
-			ViewBag.Title = title;
-			ViewBag.CompanyName = Constants.COMPANY_NAME;
-
-			ControllerUtil.SetTwitterCard(ViewBag);
+            ControllerUtil.SetSubtitle(ViewBag, title);
 		}
 	}
 }
