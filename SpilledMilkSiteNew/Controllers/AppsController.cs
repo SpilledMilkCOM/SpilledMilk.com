@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 using SM.Models;
+using SM.Utils;
 
 namespace SpilledMilkSiteNew.Controllers
 {
@@ -33,8 +34,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		private void SetTitle(string title)
 		{
-			ViewBag.Title = title;
-			ViewBag.CompanyName = Constants.COMPANY_NAME;
+            ControllerUtil.SetSubtitle(ViewBag, title, Constants.COMPANY_NAME);
 		}
 	}
 }
