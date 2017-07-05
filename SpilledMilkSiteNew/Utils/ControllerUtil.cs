@@ -7,14 +7,31 @@ namespace SM.Utils
         /// <summary>
         /// Sets the Subtitle and Title of the ViewBag so the shared _Layout page can use it.
         /// </summary>
-        /// <param name="subtitle"></param>
-        public static void SetSubtitle(dynamic viewBag, string subtitle)
+        /// <param name="subtitle">The H1 title and part of the title tag.</param>
+        /// <param name="titleSuffix">Optional - Appended to the subtitle to make up the title tag.</param>
+        public static void SetSubtitle(dynamic viewBag, string subtitle, string titleSuffix = null)
         {
             // http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
             // 1) Page Titles need to be descriptive and help SEO.
 
+            if (titleSuffix == null)
+            {
+                titleSuffix = Constants.COMPANY_NAME + "Comics";
+            }
+            
+            if (subtitle == null)
+            {
+                // If there is no subtitle, then use the suffix which will become the Title tag on the page.
+                subtitle = titleSuffix;
+                viewBag.Title = titleSuffix;
+            }
+            else
+            {
+                // If the title and suffix are different, then the suffix is appended to the subtitle.
+                viewBag.Title = $"{subtitle} - {titleSuffix}";
+            }
+
             viewBag.Subtitle = subtitle;
-            viewBag.Title = $"{subtitle} - {Constants.COMPANY_NAME} Comics";
             viewBag.CompanyName = Constants.COMPANY_NAME;
 
             SetTwitterCard(viewBag);

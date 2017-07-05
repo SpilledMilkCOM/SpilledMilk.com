@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 using SM.Models;
+using SM.Utils;
 
 namespace SpilledMilkSiteNew.Controllers
 {
@@ -16,6 +17,7 @@ namespace SpilledMilkSiteNew.Controllers
 
             return View();
         }
+
 		public ActionResult CoverSketches()
 		{
 			SetTitle("Cover Sketches");
@@ -46,7 +48,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		public ActionResult Index()
 		{
-			SetTitle("CiCi Miniseries");
+			SetTitle(null);
 
 			return View();
 		}
@@ -67,8 +69,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		private void SetTitle(string title)
 		{
-			ViewBag.Title = title;
-			ViewBag.CompanyName = Constants.COMPANY_NAME;
+            ControllerUtil.SetSubtitle(ViewBag, title, "CiCi Miniseries");
 		}
 	}
 }
