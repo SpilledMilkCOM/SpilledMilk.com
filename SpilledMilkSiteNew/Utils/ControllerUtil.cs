@@ -16,7 +16,7 @@ namespace SM.Utils
 
             if (titleSuffix == null)
             {
-                titleSuffix = Constants.COMPANY_NAME + "Comics";
+                titleSuffix = Constants.COMPANY_NAME + " Comics";
             }
             
             if (subtitle == null)
