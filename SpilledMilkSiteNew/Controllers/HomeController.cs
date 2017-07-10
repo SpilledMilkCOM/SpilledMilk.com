@@ -9,7 +9,7 @@ namespace SpilledMilkSiteNew.Controllers
 	{
 		public ActionResult Index()
 		{
-			SetTitle("Home");
+			SetTitle(null);
 
 			return View();
 		}
