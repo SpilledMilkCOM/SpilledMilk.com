@@ -556,6 +556,7 @@
     <Content Include="Views\CiCi\Pinups.cshtml" />
     <Content Include="Views\CiCi\CoverSketches.cshtml" />
     <Content Include="Views\CiCi\CreditParker.cshtml" />
+    <Content Include="sitemap.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- REF: https://www.sitemaps.org/protocol.html  -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.spilledmilk.com/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.spilledmilk.com/apps/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+       
+    <url>
+        <loc>http://www.spilledmilk.com/apps/checkoutmystuff/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+           
+    <url>
+        <loc>http://www.spilledmilk.com/apps/idiotdriver/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+       
+    <url>
+        <loc>http://www.spilledmilk.com/cici/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/characters/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/coversketches/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/creditparker/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/credits/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/images/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/pinups/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/cici/story/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/home/about/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/home/buy/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/home/contact/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.spilledmilk.com/home/legal/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.spilledmilk.com/home/news/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+   
+    <url>
+        <loc>http://www.spilledmilk.com/home/origin/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>http://www.spilledmilk.com/home/versions/</loc>
+        <lastmod>2017-07-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+ 
+</urlset>
