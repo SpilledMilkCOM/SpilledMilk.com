@@ -3,7 +3,10 @@
 <h1 class="title-text">@ViewBag.Subtitle</h1>
 
 	<div class="row article-row">
-		<div id="nanoGallery1">
+
+        <div class="col-sm-1 col-md-2"> </div>
+
+		<div id="nanoGallery1" class="col-sm-10 col-md-8">
 			@foreach (var fileName in FileUtil.FilterImagesInPath(Server, "~/images", "CiCiCoverSketch-*"))
 			{
 				// TODO - Might want to add that "endless scrolling" code here.
