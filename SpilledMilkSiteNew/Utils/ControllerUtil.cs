@@ -16,9 +16,10 @@ namespace SM.Utils
 
             if (titleSuffix == null)
             {
-                titleSuffix = Constants.COMPANY_NAME + " Comics";
+                //titleSuffix = Constants.COMPANY_NAME + " Comics";
+                titleSuffix = Constants.COMPANY_NAME;
             }
-            
+
             if (subtitle == null)
             {
                 // If there is no subtitle, then use the suffix which will become the Title tag on the page.
