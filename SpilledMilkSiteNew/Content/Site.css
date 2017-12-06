@@ -94,6 +94,11 @@ textarea {
 	transition: all 0.5s;
 }
 
+.navHeader {
+	color: white;
+	font-size: large;
+}
+
 /*@media (max-width: 400px)
 {
 	.navbar-header {
