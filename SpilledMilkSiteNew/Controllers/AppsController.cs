@@ -32,6 +32,13 @@ namespace SpilledMilkSiteNew.Controllers
 			return View();
 		}
 
+		public ActionResult MooveePicker()
+		{
+			SetTitle("Moovee Picker");
+
+			return View();
+		}
+
 		private void SetTitle(string title)
 		{
             ControllerUtil.SetSubtitle(ViewBag, title, Constants.COMPANY_NAME);

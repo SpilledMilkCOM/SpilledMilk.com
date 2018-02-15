@@ -35,9 +35,10 @@ namespace SpilledMilkSiteNew.Controllers
 			return View();
 		}
 
-		public ActionResult News()
+
+		public ActionResult Email()
 		{
-			SetTitle("News");
+			SetTitle("Email");
 
 			return View();
 		}
@@ -45,6 +46,13 @@ namespace SpilledMilkSiteNew.Controllers
 		public ActionResult Legal()
 		{
 			SetTitle("Legal");
+
+			return View();
+		}
+
+		public ActionResult News()
+		{
+			SetTitle("News");
 
 			return View();
 		}

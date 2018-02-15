@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -331,6 +332,7 @@
     <Content Include="Images\Instagram-logo.png" />
     <Content Include="Images\MilkSpill.jpg" />
     <Content Include="Images\MilkSpillMenuAlpha.png" />
+    <Content Include="Images\Moovee Picker Cow128x128.png" />
     <Content Include="Images\oilslick.jpg" />
     <Content Include="Images\oilspill.jpg" />
     <Content Include="Images\pds00.jpg" />
@@ -557,6 +559,8 @@
     <Content Include="Views\CiCi\CoverSketches.cshtml" />
     <Content Include="Views\CiCi\CreditParker.cshtml" />
     <Content Include="sitemap.xml" />
+    <Content Include="Views\Apps\MooveePicker.cshtml" />
+    <Content Include="Views\Home\Email.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
