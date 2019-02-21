@@ -7,6 +7,6 @@
 		public const string TWITTER_ID = "@SpilledMilkCOM";
 		public const string TWITTER_CREATOR_ID = "@SpilledMilkCOM";
 
-		public const string WEBSITE_URL = "http://wwww.SpilledMilk.com";
+		public const string WEBSITE_URL = "https://www.SpilledMilk.com";
 	}
 }
