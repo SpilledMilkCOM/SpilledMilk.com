@@ -34,7 +34,7 @@ namespace SpilledMilkSiteNew.Controllers
 
 		public ActionResult MooveePicker()
 		{
-			SetTitle("Moovee Picker");
+			SetTitle("MooVee Picker");
 
 			return View();
 		}
