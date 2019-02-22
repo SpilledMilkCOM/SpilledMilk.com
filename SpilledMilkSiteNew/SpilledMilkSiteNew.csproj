@@ -364,7 +364,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
+    <Content Include="Images\Spilled Milk on Black 114x114.png" />
+    <Content Include="Images\Spilled Milk on Black 144x144.png" />
     <Content Include="Images\Spilled Milk on Black 300x300.png" />
+    <Content Include="Images\Spilled Milk on Black 60x60.png" />
     <Content Include="Images\Spilled Milk on Black Mini.jpg" />
     <Content Include="Images\SpilledMilkSketch.jpg" />
     <Content Include="Images\thumbs\CiCi01.00.Cover-Finch.jpg" />
