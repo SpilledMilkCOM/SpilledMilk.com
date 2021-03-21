@@ -1,7 +1,7 @@
 ﻿@using SM.Models
 
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
 	<meta charset="utf-8" />
@@ -50,84 +50,124 @@
 
 </head>
 
-@*
-	Bootstrap's Visual Breakpoints
-
-	Device Mappings:
-
-	Extra Small		xs		<  768px
-	Small			sm		>= 768px		(iPad in portrait mode)
-	Medium			md		>= 992px
-	Large			lg		>= 1200 px
-*@
-
 <body>
-	<header>
-		<div class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
-			<div class="container">
+	<div class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark nav-settings cbp-af-header">
 
-				<!-- Mobile first. -->
+		@*
+			http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
+			3) ALT tags - Using more descriptive words in the ALT tags will allow SEO rankings to improve.
+		*@
 
-				<div class="navbar-header">
+		<a class="navbar-brand" href="~/Home/Index">
+			<img src="~/Images/Spilled Milk Logo.png" alt="Spilled Milk Comics Logo" style="height: 2em;" />
+			&nbsp;&nbsp;Spilled Milk Comics
+		</a>
 
-					@*
-						http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
-						3) ALT tags - Using more descriptive words in the ALT tags will allow SEO rankings to improve.
-					*@
+		<!-- Mobile first. -->
 
-					<span class="navbar-left navHeader">
-						<a href="~/Home/Index"><img src="~/Images/Spilled Milk Logo.png" alt="Spilled Milk Comics Logo" height="40" /></a>
-						&nbsp;&nbsp;&nbsp;&nbsp;Spilled Milk Comics
-					</span>
+		<button class="navbar-toggler" type="button" onclick="$('.collapse').collapse()"
+				data-toggle="collapse" data-target="#mainNavBar"
+				aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+		<!-- If there's room. -->
 
-				</div>
+		<div class="collapse navbar-collapse" id="mainNavBar">
+			<ul class="navbar-nav ml-auto">
 
-				<!-- If there's room. -->
+				<li class="nav-item" style="margin-right: 1em;">
+					<a href="http://twitter.com/SpilledMilkCOM" target="_blank"><img src="~/Images/Twitter-Logo.png" alt="Spilled Milk Comics Twitter page" height="30" /></a>
+				</li>
+				<li class="nav-item" style="margin-right: 1em;">
+					<a href="http://www.facebook.com/SpilledMilkComics" target="_blank"><img src="~/Images/facebook-logo.png" alt="Spilled Milk Comics Facebook page" height="30" /></a>
+				</li>
+				<li class="nav-item" style="margin-right: 1em;">
+					<a href="http://www.instagram.com/spilledmilkcom/" target="_blank"><img src="~/Images/Instagram-logo.png" alt="Spilled Milk Comics Instagram page" height="30" /></a>
+				</li>
 
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="http://twitter.com/SpilledMilkCOM" target="_blank"><img src="~/Images/Twitter-Logo.png" alt="Spilled Milk Comics Twitter page" height="30" /></a></li>
-						<li><a href="http://www.facebook.com/SpilledMilkComics" target="_blank"><img src="~/Images/facebook-logo.png" alt="Spilled Milk Comics Facebook page" height="30" /></a></li>
-						<li><a href="http://www.instagram.com/spilledmilkcom/" target="_blank"><img src="~/Images/Instagram-logo.png" alt="Spilled Milk Comics Instagram page" height="30" /></a></li>
-						<li>@Html.ActionLink("Home", "Index", "Home")</li>
-						<li>@Html.ActionLink("About", "About", "Home")</li>
-						<li>@Html.ActionLink("Buy", "Buy", "Home")</li>
-						<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-					</ul>
-				</div>
-			</div>
+				<li class="nav-item">
+					@Html.ActionLink("Home", "Index", "Home", null, new { @class = string.Format("nav-link{0}", ViewBag.Title == "Spilled Milk" ? " active" : string.Empty) })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("About", "About", "Home", null, new { @class = string.Format("nav-link{0}", ViewBag.Subtitle == "About" ? " active" : string.Empty) })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("Buy", "Buy", "Home", null, new { @class = string.Format("nav-link{0}", ViewBag.Subtitle == "Purchase" ? " active" : string.Empty) })
+				</li>
+				<li class="nav-item">
+					@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = string.Format("nav-link{0}", ViewBag.Subtitle == "Contact" ? " active" : string.Empty) })
+				</li>
+			</ul>
 		</div>
-	</header>
-
-	<div class="container-fluid">
-		@RenderBody()
 	</div>
 
-	<footer>
-		<div class="container-fluid">
-			<div class="row row-divider"> </div>
-			<div class="row article-row">
-				<div class="col-sm-3">
-					&copy; 1996-@DateTime.Now.Year - @ViewBag.CompanyName
-				</div>
+	<main role="main">
+		@RenderBody()
+	</main>
 
-				<div class="col-sm-3 fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	@*
+		Remember "Mobile First"
+		START with the mobile layout
+		THEN change as you grow to larger devices.
 
-				<div class="col-sm-4">
-					<a href="https://twitter.com/SpilledMilkCOM" class="twitter-follow-button" data-show-count="true">Follow @@SpilledMilkCOM</a>
-				</div>
+		.col- (extra small devices - screen width less than 576px)
+		.col-sm- (small devices - screen width equal to or greater than 576px)
+		.col-md- (medium devices - screen width equal to or greater than 768px)
+		.col-lg- (large devices - screen width equal to or greater than 992px)
+		.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
 
-				<div class="col-sm-2">
-					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-				</div>
+		On Mobile:
+
+		|Copyright  |Version   |
+		|Follow          |Tweet|
+
+		Small & Medium:
+
+		|Copyright  |Version   |Tweet|
+		|Follow                      |
+
+		Large & XL:
+
+		|Copyright  |Version   |Follow      |Tweet|
+
+		At the small threshold the order of the Tweet button is moved next to the version and the Follow button is moved last.
+		At the Large threshold the order is put back.
+		The widths are adjusted accordingly so there is no overlap.
+
+		When you read the column classes, start at the left and the chunks will add up to 12.
+		Then move to the right encountering the size thresholds which will adjust the widths.
+		I put thresholds in their sizing order xs -> sm -> md -> lg -> xl
+	*@
+
+	<footer class="container" style="margin-bottom: 1em;">
+		<div class="row">
+
+			<div class="col-8 col-sm-6 col-md-4">
+				&copy; 1996-@DateTime.Now.Year - @ViewBag.CompanyName
 			</div>
-			<div class="row row-divider"> </div>
+
+			<div class="col-4 col-sm-4 col-md-6 col-lg-3 fb-like"
+				 data-layout="button_count"
+				 data-action="like"
+				 data-show-faces="true"
+				 data-share="true">
+			</div>
+
+			<div class="col-9 order-sm-12 col-lg-4 order-lg-3">
+				<a class="twitter-follow-button"
+				   href="https://twitter.com/SpilledMilkCOM"
+				   data-show-count="true">
+					Follow @@SpilledMilkCOM
+				</a>
+			</div>
+
+			<div class="col-3 col-sm-2 order-sm-3 col-lg-1 order-lg-12">
+				<a class="twitter-share-button"
+				   href="https://twitter.com/intent/tweet">
+					Tweet
+				</a>
+			</div>
 		</div>
 	</footer>
 
@@ -135,8 +175,8 @@
 	@Scripts.Render("~/bundles/bootstrap")
 	@Scripts.Render("~/bundles/classie")
 	@Scripts.Render("~/bundles/cbpAnimatedHeader")
-	@Scripts.Render("~/bundles/easing")
-	@Scripts.Render("~/bundles/stellar")
+	@*@Scripts.Render("~/bundles/easing")
+		@Scripts.Render("~/bundles/stellar")*@
 	@Scripts.Render("~/bundles/wow")
 	@Scripts.Render("~/bundles/nanoGallery")
 

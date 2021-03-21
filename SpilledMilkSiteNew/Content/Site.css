@@ -20,6 +20,13 @@ textarea {
 	padding-right: 15px;
 }
 
+/* Changing the Bootstrap button style */
+.btn-default {
+	border-color: lightgray;
+	border-width: 0.06em;
+	box-shadow: grey 0.07em 0.07em;
+}
+
 #carousel {
 	margin: 50px 5px;
 }
@@ -83,9 +90,9 @@ textarea {
 	}
 }
 
-.img-responsive {
+/*.img-responsive {
 	margin: 0px auto;
-}
+}*/
 
 .navbar {
 	margin-bottom: 0px;

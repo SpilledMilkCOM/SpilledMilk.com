@@ -35,7 +35,6 @@ namespace SpilledMilkSiteNew.Controllers
 			return View();
 		}
 
-
 		public ActionResult Email()
 		{
 			SetTitle("Email");

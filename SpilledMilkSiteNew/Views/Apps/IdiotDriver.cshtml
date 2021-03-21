@@ -1,109 +1,114 @@
-﻿<h1 class="title-text">@ViewBag.Subtitle</h1>
+﻿<div class="container container-main">
+	<div class="row">
 
-<row>
-
-	<div class="col-md-3 col-sm-6">
-		<div class="col-xs-4">
-			<img src="~/Images/Idiot Driver 300x300.png" height="100" />
+		<div class="col-12">
+			<h1 class="title-text">@ViewBag.Subtitle</h1>
 		</div>
 
-		<div class="col-xs-8">
-			What's Spilled Milk doing creating Windows Phone apps? As most of you know, I've
-			been writing software for a LONG time and it pays the bills better than creating
-			comics (at least for now).
+		<div class="col-md-3 col-sm-6">
+
+			<img src="~/Images/Idiot Driver 300x300.png" style="height: 100px; margin-right: 1em;" align="left" />
+
+			<p>
+				What's Spilled Milk doing creating Windows Phone apps? As most of you know, I've
+				been writing software for a LONG time and it pays the bills better than creating
+				comics (at least for now).
+			</p>
+			<p>
+				This project was definitely challenging. You can lay the basics down in a few hours
+				within Visual Studio, but as you know it takes a LOT longer to get everything JUST
+				so. Much like it is with comics. I'll definitely post the steps to my blog, because
+				I made a few mistakes trying to use examples that I found that were WAY too old.
+			</p>
+			<p>
+				If you stumbled across this page by accident then go check out the Windows Phone
+				marketplace and download
+				<a href="https://www.microsoft.com/en-us/store/p/idiot-driver/9nblggh0j6ds">
+					<strong>IDIOT DRIVER!</strong>
+					<img alt="Idiot Driver" src="~/Images/WindowsPhoneMarketplace.jpg" width="40" height="40" border="0" />
+				</a>
+				<br />
+				THANK YOU!
+				<br />
+				Parker.
+			</p>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h3>Tips:</h3>
+			== When using the speach tool (in the SMS text app) make sure you say the words
+			"License Plate" and then say the plate letters and/or numbers. The speach tool seems
+			to drop the first few things you say.
+			<br />
+			<br />
+			== If you say the numbers quickly "one two three", for example, then the speach
+			recognition will represent the text as "123" instead of "one two three".
+			<br />
+			<br />
+			== The parse (paste) function will parse "one two three" for you into the numbers
+			if you say them too slow. But most of the time you WANT to say everything slow and
+			distinct so the speach-to-text will work. (It will also remove the words "License
+			Plate" if that makes it into the text.)
+			<br />
+			<br />
+			== The parse (paste) function will also parse other phonetically close words into
+			letters, for example: "why" to "Y" and "see" to "C". (An editable list of these
+			auto corrections will be provided in future releases, but for now I just went with
+			a few simple examples.)
+			<br />
+			<br />
+			== If you make any changes to the settings, make sure you SAVE them otherwise when
+			you exit that page or the application they won't stick.
+			<br />
+			<br />
+			== The "Add Favorite" (Add Default Tweet) doesn't prompt for confirmation. Sorry
+			about that, but it's easy enough to delete.
+
 		</div>
 
-		<br />
-		<br />
-		This project was definitely challenging. You can lay the basics down in a few hours
-		within Visual Studio, but as you know it takes a LOT longer to get everything JUST
-		so. Much like it is with comics. I'll definitely post the steps to my blog, because
-		I made a few mistakes trying to use examples that I found that were WAY too old.
-		<br />
-		<br />
-		If you stumbled across this page by accident then go check out the Windows Phone
-		marketplace and download
-		<a href="https://www.microsoft.com/en-us/store/p/idiot-driver/9nblggh0j6ds">
-			<strong>IDIOT DRIVER!</strong>
-			<img alt="Idiot Driver" src="~/Images/WindowsPhoneMarketplace.jpg" width="40" height="40" border="0" />
-		</a>
-		<br />
-		THANK YOU!
-		<br />
-		Parker.
-	</div>
-	<div class="col-md-3 col-sm-6">
-		<h3>Tips:</h3>
-		== When using the speach tool (in the SMS text app) make sure you say the words
-		"License Plate" and then say the plate letters and/or numbers. The speach tool seems
-		to drop the first few things you say.
-		<br />
-		<br />
-		== If you say the numbers quickly "one two three", for example, then the speach
-		recognition will represent the text as "123" instead of "one two three".
-		<br />
-		<br />
-		== The parse (paste) function will parse "one two three" for you into the numbers
-		if you say them too slow. But most of the time you WANT to say everything slow and
-		distinct so the speach-to-text will work. (It will also remove the words "License
-		Plate" if that makes it into the text.)
-		<br />
-		<br />
-		== The parse (paste) function will also parse other phonetically close words into
-		letters, for example: "why" to "Y" and "see" to "C". (An editable list of these
-		auto corrections will be provided in future releases, but for now I just went with
-		a few simple examples.)
-		<br />
-		<br />
-		== If you make any changes to the settings, make sure you SAVE them otherwise when
-		you exit that page or the application they won't stick.
-		<br />
-		<br />
-		== The "Add Favorite" (Add Default Tweet) doesn't prompt for confirmation. Sorry
-		about that, but it's easy enough to delete.
+		<div class="col-md-3 col-sm-6">
+			<h3>Games:</h3>
+			== SLUG BUG - Use the default tweets to quickly tag VW Bugs. Add the #SlugBug hashtag
+			or something else so others can track you. It's like you're virtually (Picture uploads
+			coming SOON!)
+			<br />
+			<br />
+			== OUT of STATE - Tag out of state plates, they MAY tell you why they're in YOUR
+			state. ;-) See how many you can get!
+			<br />
+			<br />
+			== VANITY PLATE - Tell people about the coolest vanity plate, or get help decoding
+			one.
+
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<h3>Versions:</h3>
+			== 2.5.13.2012 - Metro look for main page.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Added &lt;&lt;MYTAG&gt;&gt; keyword to substitute my license
+			plate into tweet.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Added TiltEnabled.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Support GZIP response from Twitter.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Made modal field wrapped.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Intercept Back Button for modal field.
+			<br />
+			&nbsp;&nbsp;&nbsp; &amp; Name change from Crazy Driver.
+			<br />
+			<br />
+			== 2.4.15.2012 - Metroized the settings.
+			<br />
+			<br />
+			== 1.3.1.2012 - Initial creation
+			<br />
+			<br />
+
+		</div>
 
 	</div>
 
-	<div class="col-md-3 col-sm-6">
-		<h3>Games:</h3>
-		== SLUG BUG - Use the default tweets to quickly tag VW Bugs. Add the #SlugBug hashtag
-		or something else so others can track you. It's like you're virtually (Picture uploads
-		coming SOON!)
-		<br />
-		<br />
-		== OUT of STATE - Tag out of state plates, they MAY tell you why they're in YOUR
-		state. ;-) See how many you can get!
-		<br />
-		<br />
-		== VANITY PLATE - Tell people about the coolest vanity plate, or get help decoding
-		one.
-
-	</div>
-
-	<div class="col-md-3 col-sm-6">
-		<h3>Versions:</h3>
-		== 2.5.13.2012 - Metro look for main page.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Added &lt;&lt;MYTAG&gt;&gt; keyword to substitute my license
-		plate into tweet.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Added TiltEnabled.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Support GZIP response from Twitter.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Made modal field wrapped.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Intercept Back Button for modal field.
-		<br />
-		&nbsp;&nbsp;&nbsp; &amp; Name change from Crazy Driver.
-		<br />
-		<br />
-		== 2.4.15.2012 - Metroized the settings.
-		<br />
-		<br />
-		== 1.3.1.2012 - Initial creation
-		<br />
-		<br />
-
-	</div>
-</row>
+	<div class="row row-divider"> </div>
+</div>

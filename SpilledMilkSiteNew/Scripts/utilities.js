@@ -28,7 +28,7 @@ $(function () {
 	});
 
 	// parallax scrolling with stellar.js
-	$(window).stellar();
+	//$(window).stellar();
 
 	// initialize WOW for element animation
 	new WOW().init();

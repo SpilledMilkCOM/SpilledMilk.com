@@ -19,13 +19,20 @@ namespace SpilledMilkSiteNew
 					  "~/Scripts/bootstrap.min.js",
 					  "~/Scripts/respond.js"));
 
+			// cbpAnimatedHeader depends on classie to toggle/replace the class.
+
 			bundles.Add(new ScriptBundle("~/bundles/classie").Include("~/Scripts/classie.js"));
+
+			// Adding animated compaction of the navbar
+
 			bundles.Add(new ScriptBundle("~/bundles/cbpAnimatedHeader").Include("~/Scripts/cbpAnimatedHeader.min.js"));
-			bundles.Add(new ScriptBundle("~/bundles/utilities").Include("~/Scripts/utilities.js"));
-			bundles.Add(new ScriptBundle("~/bundles/easing").Include("~/Scripts/jquery.easing.1.3.js"));
-			bundles.Add(new ScriptBundle("~/bundles/stellar").Include("~/Scripts/jquery.stellar.js"));
+
+			//bundles.Add(new ScriptBundle("~/bundles/easing").Include("~/Scripts/jquery.easing.1.3.js"));
+			//bundles.Add(new ScriptBundle("~/bundles/stellar").Include("~/Scripts/jquery.stellar.js"));
 			bundles.Add(new ScriptBundle("~/bundles/wow").Include("~/Scripts/wow.min.js"));
 			bundles.Add(new ScriptBundle("~/bundles/nanoGallery").Include("~/Scripts/jquery.nanogallery.min.js"));
+
+			// All the STYLE includes
 
 			bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.min.css", "~/Content/site.css"));
 			bundles.Add(new StyleBundle("~/Content/FontAwesome").Include("~/Content/font-awesome.min.css"));
@@ -35,6 +42,10 @@ namespace SpilledMilkSiteNew
 
 			// http://nanogallery.brisbois.fr
 			bundles.Add(new StyleBundle("~/Content/nanoGallery").Include("~/Content/nanogallery.min.css"));
+
+			// Adding the "custom" scripts to a bundle.
+
+			bundles.Add(new ScriptBundle("~/bundles/utilities").Include("~/Scripts/utilities.js"));
 		}
 	}
 }
