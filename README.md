@@ -15,3 +15,12 @@ http://nanogallery.brisbois.fr/
 https://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf
 
 http://diffusion.digital/top-10-seo-tips-how-to-improve-your-google-ranking/
+
+* Converting to [Bootstrap](https://getbootstrap.com) 4
+  * Adjusting the `navbar` elements.
+  * Removed "stellar" parallax scrolling, because it doesn't seem to work in Bootstrap 4.
+  * Make sure the nano-gallery is in a "col-12" column.
+  * Replace `glyphicon` with [Emojis](https://emojipedia.org/)
+  * Adjusting the columns and nested columns.
+  * The [commit](https://github.com/SpilledMilkCOM/SpilledMilk.com/commit/a2f82e6a07c88fd8b9a96eca1f89cd728bb90162)
+    that has all the conversions.
