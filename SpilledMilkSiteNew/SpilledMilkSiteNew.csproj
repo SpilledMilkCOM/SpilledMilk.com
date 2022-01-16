@@ -193,8 +193,7 @@
     <Content Include="Images\CiCiPinup-Hughes_Adam_1999_07.jpg" />
     <Content Include="Images\CiCiPinup-J_James_2017.jpg" />
     <Content Include="Images\CiCiPinup-Richards_Russ_2017_07CiCi.jpg" />
-    <Content Include="Images\CiCiPinup-Sung_Sorah-2017_07.jpg" />
-    <Content Include="Images\CiCiPinup-Sung_Sorah_2017_07.jpg" />
+    <Content Include="Images\CiCiPinup-Suhng_Sorah_2017_07.jpg" />
     <Content Include="Images\CiCiPinup-Unknown_2017.jpg" />
     <Content Include="Images\CiCiPinup-Webber_Scott_2017_07.jpg" />
     <Content Include="Images\CiCiPinup-Worrell_Benjamin_2017_07.jpg" />
@@ -467,7 +466,7 @@
     <Content Include="Images\thumbs\CiCiPinup-Smart_Parker_1998_02.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Caldwell_Talent_2001.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Smidt_Jake_2014.jpg" />
-    <Content Include="Images\thumbs\CiCiPinup-Sung_Sorah_2017_07.jpg" />
+    <Content Include="Images\thumbs\CiCiPinup-Suhng_Sorah_2017_07.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Terrell_Will_2002.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Trujillo_Alfred_2016.jpg" />
     <Content Include="Images\thumbs\CiCiPinup-Udager_Jaime_2014.jpg" />
