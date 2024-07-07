@@ -1,14 +1,8 @@
-﻿using Microsoft.Owin;
-using Owin;
-
-[assembly: OwinStartupAttribute(typeof(SpilledMilkSiteNew.Startup))]
-namespace SpilledMilkSiteNew
-{
+﻿namespace SpilledMilkSiteNew {
     public partial class Startup
     {
-        public void Configuration(IAppBuilder app)
+        public void Configuration()
         {
-            ConfigureAuth(app);
         }
     }
 }

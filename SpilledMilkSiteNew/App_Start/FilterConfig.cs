@@ -1,9 +1,7 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace SpilledMilkSiteNew
-{
-	public class FilterConfig
+namespace SpilledMilkSiteNew {
+    public class FilterConfig
 	{
 		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 		{
